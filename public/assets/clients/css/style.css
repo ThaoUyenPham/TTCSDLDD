@@ -1,0 +1,792 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containero{
+    flex: 1;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Start Line Header*/
+/* .content-notification-line
+ {
+    width: 100%; 
+    white-space: nowrap;
+    overflow: hidden;
+    height: 35px;
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(253, 253, 253);
+}  */
+/* @keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} */
+
+/* .scroll-text {
+    display: inline-block;
+    height: 35px;
+    background-color:  rgb(255, 255, 255);
+    animation: scroll 25s linear infinite;
+} */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: rgb(253, 253, 253);
+    font-size: 23px;
+}
+
+.marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    height: 35px;
+    background-color:  rgb(255, 255, 255);
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* End Line Header */
+/* Start Header */
+.banner-csdl
+{
+    height: 100%;
+}
+.header-pan{
+    position: relative;
+    width: 100%;
+    background-color:#5082b3;
+    background-image: url('https://moitruong.ttcntnmt.com.vn/images/bg-header-tiengiang.png');
+}
+.header-pan img{
+    height:100% ;
+    vertical-align: top;
+}
+.text-header{
+    /* margin-top:10px ; */
+    padding: 5px;
+    display: inline-block;
+    height: 100%;
+    /* position: absolute; */
+}   
+.site_text{
+    text-shadow: 1px 2px 2px #063B5F;
+    font-size: 25px;
+    color: #acff27;
+    font-weight: bold;
+}
+.site_text_english
+{
+    text-shadow: 1px 2px 2px #063B5F;
+    font-size: 15px;
+    color: #acff27;
+    font-weight: bold;
+}
+.language{
+    display: inline-block;
+    /* position: absolute; */
+    /* display:block ; */
+    font-size: 15px;
+    /* float: right; */
+    padding: 10px;
+}
+.language ul {
+    padding: 0;
+    margin: 0;
+}
+.language ul li {
+    display: inline-block;
+    padding: 2px;
+}
+.language a{
+    text-decoration: none;
+    line-height: normal;
+    color: white;
+}
+.language img{
+    width: 30px;
+    height: 20px;
+}
+.button_search{
+    background-color: rgb(255, 255, 255);
+    /* color: rgb(0, 0, 0); */
+    border: solid 1px white;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+}
+.button_search i{
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+.form_search{
+    display: block;
+}
+.form_search input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.form_search  button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.form_search button:hover {
+    background: #ccc;
+}
+/* End Header */
+/* Start Navbar Top */
+.navbar-top{
+    width: 100%;
+    /* height: 50px; */
+    background-color: rgb(255, 255, 255);
+    box-shadow:0px 0px 5px rgb(0 0 0 / 60%);
+}
+.nav-custom{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.nav-custom a  {
+    font-size: 20px;
+    padding: 10px;
+    /* color: rgb(0, 16, 236); */
+    font-weight: bold;
+}
+.nav-custom  li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav-custom  li:hover{
+    border-radius: 10px ;
+    background-color: rgb(113, 176, 235);
+    transition: 1s;
+
+}
+.nav-custom  li:hover >ul{
+    display: inline;
+}
+
+.navbar-login{
+    right: 0px;
+    position: absolute;
+}
+
+
+.third-level-menu
+{
+    box-shadow:0px 0px 5px rgb(0 0 0 / 60%);
+    position: absolute;
+    top: 0;
+    right: -500px;
+    width: 500px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+.third-level-menu > li
+{
+    height: 30px;
+    background: #ffffff;
+    height: 45px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.third-level-menu > li:hover { 
+    border-radius: 10px ;
+    background-color: rgb(113, 176, 235);
+    transition: 1s;
+}
+.second-level-menu
+{
+    box-shadow:0px 0px 5px rgb(0 0 0 / 60%);
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    width: 500px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+.second-level-menu > li
+{
+    position: relative;
+    height: 45px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    /* line-height: 20px; */
+    
+}
+.second-level-menu > li:hover { 
+    border-radius: 10px ;
+    background-color: rgb(113, 176, 235);
+    transition: 1s;
+}
+.third-level-menu a{
+    color: black;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+}
+.second-level-menu a{
+    color: black;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+}
+/* End Header Top */
+/* Start Content */
+.container-ssm{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.content-d {
+    /* background-color: rgb(255, 255, 255); */
+    /* height: 1200px; */
+    padding: 0px;
+}
+    /* Start SlideShow */
+    .slideshow{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 500px;
+        padding: 0;
+        margin: 0;
+    }
+    .Slideshow-content{
+        background-color: white;
+        height: 500px;
+    }
+    .text-overlay {
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.7); /* Màu nền overlay */
+       
+        padding: 10px; /* Khoảng cách văn bản từ lề */
+        font-family: Arial, sans-serif; /* Phông chữ */
+        font-size: 18px; /* Cỡ chữ */
+        color: black; /* Màu chữ */
+      }  
+    .slider-container{
+        border-radius: 20px;
+    }
+    .text-slide{
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        background-color: rgba(97, 96, 96, 0.7);
+        /* text-align: center; */
+    }
+    .text-slide p{
+        max-height: 50px;
+        overflow: hidden;
+    }
+    .text-slide h3{
+        max-height: 70px;
+        overflow: hidden;
+    }
+    .text-slide a{
+       max-width: 30%;
+    }
+    .text-slide a:hover{
+        background: none;
+        color:white;
+        transition: 2s;
+        /* border: none; */
+     }
+    /* End SlideShow */
+    /* Start List News */
+    .news-item{
+        box-shadow:0px 0px 5px rgb(0 0 0 / 60%);
+        margin-top: 5px;
+        margin-bottom:5px ;
+        color: #000;
+        width: 100%;
+        height: 120px;
+        background: white;
+        
+    }
+    .news-item2{
+        margin-top: 5px;
+        margin-bottom:5px ;
+        color: #000;
+        width: 100%;
+        height: auto;
+    }
+    .news-item img{
+        /* max-width: 50%; */
+        width: 150px;
+        padding: 5px;
+        height: 120px;
+    }
+    .text-news{
+        display: grid;
+        padding-left: 10px;
+        max-height: 120px;
+        overflow: hidden;
+    }
+    .text-news h6{
+        max-height: 60px;
+        overflow: hidden;
+        margin-bottom:2px;
+    }
+    .text-news p{
+        font-size: 13px;
+        max-height: 60px;
+        overflow: hidden;
+    }
+    .title-news-mini{
+        text-align: center;
+        background-color: #5082b3;
+        text-decoration: none;
+        color: white;
+        height: 40px;
+        border-top-left-radius: 5px;
+        border-top-right-radius:5px;
+    }
+    .box-list-mini{
+        border-radius: 5px;
+        padding-left: 0px;
+    }
+    .show_sieudulieu{
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .box-news-list-container{
+        /* border: solid 1px blue; */
+        border-radius: 10px;
+        background: white;
+        box-shadow:0px 0px 5px rgb(0 0 0 / 60%);
+    }
+    .news-container{
+        border-radius:10px ;
+    }
+    
+    .list-news-mini{
+        height: 450px;
+        /* height: 100%; */
+        transition: 2s;
+        overflow: hidden;
+    }
+    .box-list-mini:hover .list-news-mini{
+        
+        overflow: auto;
+    }
+    .button_load_more{
+        width: 100%;
+        height: 40px;
+        font-size: 19px;
+        color: white;
+        text-align: center;
+    }
+        /* Start Item Content Link*/
+        .navlinkopen{
+            padding: 0;
+            margin-top: 10px;
+            width: 100%;
+            height: 80px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        } 
+        .navlinkopen img {
+            padding: 5px;
+            width: 100px;
+            height: 100%;
+        }
+        .navlinkopen h6 {
+          font-size: 15px;
+          font-weight: bold;
+          text-decoration: none;
+          color: yellow;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 10px;
+         max-height:100px;
+          align-items: center;
+        }
+        .heighttext{
+            /* width: 100%; */
+            height: 100%;
+        }
+        .imgbackgroundlink{
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg");
+        }
+        /* End Item Content Link */
+    /* End List News */
+    /* Start Menu Right */
+    .list-mini-d{
+        text-align: left;
+        font-size: 20px;
+        border-radius: 5px;
+        /* background-color: yellow; */
+        /* padding: 5px; */
+        margin: 5px;
+        box-shadow:0px 0px 5px rgb(0 0 0 / 60%);
+    }
+    .list-mini-d :hover{
+        /* text-align: left; */
+        font-size: 22px;
+        background-color: yellow;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        transition: 1s;
+    }
+    .list-mini-d:hover::after {
+        /* Styles for the pseudo-element during hover */
+        transition: opacity 2s ease-in-out; /* Set transition for opacity */
+        opacity: 1; /* Set initial opacity to 1 */
+    }
+    /* End Start Menu Right */
+
+    /* Start Content News*/
+        .loading-more{
+            margin-top: 5px;
+            width: 100%;     
+        }
+        .btn-loadmore{
+            display: flex;
+            position: relative;
+            left:40%;
+        }
+        .btn-loadmore button{
+            width: 200px;
+        }
+        .table-news a{
+            text-decoration: none;
+            color: black;
+        }
+        .table-news{
+            /* box-shadow:0px 0px 5px rgb(0 0 0 / 60%); */
+            width: 100%;
+            height: auto;
+           padding-bottom: 5px;  
+        }
+        .card_new{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 180px;
+            /* background-color: #acff27; */
+            box-shadow:0px 0px 5px rgba(185, 184, 184, 0.6);
+            border-radius: 10px;
+        }
+        .card_new img{
+            padding: 10px;
+            width: 250px;
+            float: left;
+            height: 180px;
+            border-radius: 20px;
+            /* border-radius: 10px 20px 30px 40px; */
+        }
+        .card_new:hover  {
+            height: 200px;
+            transition: 2s;
+        }
+        .card_new:hover img {
+            height: 200px;
+            width: 280px;
+            transition: 2s;
+        }
+        .card_new:hover .text_news {
+            height: 200px;
+            transition: 2s;
+        }
+        .card_new:hover p {
+            height: 150px;
+            transition: 2s;
+        }
+        
+        .card_new .text_news{
+            height: 180px;
+            width: 100%;
+            /* float: left; */
+            /* display: inline-block; */
+            padding: 10px;
+        }
+       .text_news h3{
+            /* width: 100%; */
+            overflow: hidden;
+            max-height: 70px;
+            font-weight: bold;
+        }
+        .text_news p{
+            /* width: 100%; */
+            overflow: hidden;
+            max-height: 74px;
+            /* font-weight: bold; */
+        }
+    /* End Content News*/
+    
+    /* Start Content Map */
+    .table-map{
+        /* box-shadow:0px 0px 5px rgb(0 0 0 / 60%); */
+        width: 100%;
+        height: auto;
+        border-radius: 0px 0px 10px 10px ;
+        padding-bottom: 5px;  
+        background: white;
+    }
+    .contentMapCategory{
+        width: 95%;
+        margin: auto;
+    }
+    /* End Content Map */
+
+    /* Start Multi Map */
+    .tab-content-map{
+       
+        width: 100%;
+        padding: 0;
+        /* margin-top:10px; */
+    }
+    .show-tabs{
+        background-color: rgb(255, 254, 254);
+        box-shadow:0px 0px 5px rgb(0 0 0 / 60%);
+        border-radius: 10px;
+        padding: 0 0 0 0;
+        margin-top: 10px;
+    }
+    .table-showmap{
+        
+        max-height: 900px;
+        /* margin-top: 10px; */
+        /* margin: 10px; */
+        padding-right: 10px;
+        padding-left: 10px;
+        /* padding: 10px; */
+    }
+        /* Tab Links */
+        /* Start Tabs Link */
+        .tabs{
+            display:flex;
+            border-radius: 5px;
+        }
+        .tablinks {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            width: 100%;
+            padding: 1rem;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight:600;
+            transition: 0.2s ease;
+            border-radius: 5px;
+        }
+        .tablinks:hover{
+            background:#5082b3;
+            color:#fff;
+        }
+        /* Tab active */
+        .tablinks.active {
+            background:#5082b3;
+            color:#fff;
+        }
+        .background-imgae-show{
+            background-image:url('https://cdn.haitrieu.com/wp-content/uploads/2022/08/logo-bo-tai-nguyen-va-moi-truong-stamp.png');
+             background-repeat:no-repeat;
+             background-position:center; 
+             background-size:contain;
+        }
+        /* tab content */
+        .tabcontent {
+            height: 620px;
+
+            display: none;
+            overflow: auto;
+            /* position: absolute; */
+            backdrop-filter: blur(5px);
+        }
+        .tabcontent2{
+            /* height: 620px; */
+
+            /* display: none; */
+            /* overflow: auto; */
+            /* position: absolute; */
+            backdrop-filter: blur(5px);
+        }
+        /* Text*/
+        .tabcontent p {
+            color: #333;
+            text-align: center;
+            /* font-size: 22px; */
+        }
+        /* tab content active */
+        .tabcontent.active {
+            display: block;
+            overflow: auto;
+        }
+        /* End Tabs Link */
+        /* Start Card */
+      
+        
+        .card {
+            margin: 10px;
+            position: relative;
+            width: 370px;
+            display: inline-block;
+            border-radius: 10px;
+            height: 230px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }
+        
+        .card-image-container {
+            position: relative;
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+        
+        .card-title-overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Màu nền tối với độ trong suốt */
+            color: #fff; /* Màu chữ trắng */
+            text-align: center;
+            /* font-size: 15px; */
+            /* padding: 10px 0; */
+        }
+        .card-title-overlay-top{
+            position: absolute;
+            right: 0;
+            /* width: 100%; */
+            background: rgba(0, 0, 0, 0.5); /* Màu nền tối với độ trong suốt */
+            color: #fff; /* Màu chữ trắng */
+            text-align: center;
+            /* padding: 2px 0; */
+        }
+        .card-title {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        
+        .card-content {
+            /* padding: 15px; */
+
+            background-color: #fff;
+        }
+        
+        .card-description {
+            font-size: 13px;
+            padding: 0;
+            color: #777;
+        }
+        
+        .card-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover .card-hover {
+            opacity: 1;
+        }
+        
+        .view-map-button {
+            padding: 10px 20px;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            color: #333;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .view-map-button:hover {
+            background-color: #ddd;
+        }      
+        /* End Card */
+        /* Start Video  */
+        .video-bg {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            background: black;
+        }
+        /* End Video */
+     /* End Multi Map */
+    /* Start Links */
+    .lienket-trang{
+        height: 300px;
+    }
+    /* End Links */
+/* End Content */
+/* Start Footer */
+.footer {
+    /* height: 250px; */
+    background-image: url('https://nhadepso.com/wp-content/uploads/2023/03/hinh-nen-cong-nghe_1.jpg');
+    background-position: top;
+    background-color: blue;
+    text-align: center;
+    /* padding: 0; */
+
+    /* padding: 10px; */
+    /* padding: 10px */
+}
+/* End Footer */

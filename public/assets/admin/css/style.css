@@ -1,0 +1,82 @@
+.side-nav-logo img{
+    max-width: 100px;
+    max-height: 100px;
+    /* background: wheat; */
+}
+.text-homepgae {
+    overflow: hidden;
+    height: 50px;
+    /* text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 10%;
+    padding: 5px; */
+}
+.text-homepgae h3 {
+    text-align: center;
+    height: 100%;
+    font-size: 30px;
+    /* width: 100%; */
+    padding: 5px;
+    font-weight: bold;
+    /* font: italic bold 100px Georgia, Serif; */
+    color: #0059ff;
+	text-shadow: 2px 2px 0 #d1d1d1, 2px 2px 0 #85fe14;
+}
+
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content2 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .header-top-content{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+
+  }
+  #table_load_layer th, #table_load_layer td {
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+}
+#load_data_map th, #load_data_map td {
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+}

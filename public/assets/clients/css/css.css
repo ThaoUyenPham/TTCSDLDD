@@ -1,0 +1,65 @@
+.category-in
+{
+    background: #cad3d8;
+    margin: 0px 0;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 20px;
+}
+.card {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 502px;
+    /* margin: auto; */
+    margin: 10px 0px 10px 10px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 10px;
+    z-index: 3;
+    /* color: white; */
+     position: relative;
+}
+.price {
+    color: grey;
+    width: 100%;
+    line-height: inherit;
+    margin: 0;
+    padding: 5px;
+}
+.buttonMap{
+    margin: 0;
+    padding: 0;
+}
+.card button {
+    border-radius: 0px 0px 10px 10px;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: #5082b3;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+    background: green;
+    transition: 1s;
+    width: 80%;
+    border-radius: 10px;
+}
+.card img{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+<div class="card" >
+<img src="{{asset('storage/images/')}}/{{$itemMap->thumbnail}}"  >
+<!-- <h1>Tailored Jeans</h1> -->
+<p class="price ">{{$itemMap->name}}</p>
+<p class="buttonMap"><a href="{{route('map',$itemMap->id)}}"><button>Xem chi tiết</button></a></p>
+</div>
